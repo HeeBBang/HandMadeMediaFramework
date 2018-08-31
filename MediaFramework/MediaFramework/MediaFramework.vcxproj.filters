@@ -16,10 +16,19 @@
     <Filter Include="소스 파일\util">
       <UniqueIdentifier>{791e8d1f-4e1a-473f-91d6-3d9cd44e7c80}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Core">
+      <UniqueIdentifier>{f9f4a11f-adbf-453b-b87e-3a3392b7a1a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="UTB">
+      <UniqueIdentifier>{173a63f7-f05a-4999-b81a-b842dd50627b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="UTBCWindow.h">
+      <Filter>UTB</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -31,6 +40,9 @@
     </ClCompile>
     <ClCompile Include="thread_pool.cpp">
       <Filter>소스 파일\util</Filter>
+    </ClCompile>
+    <ClCompile Include="UTBCWindow.cpp">
+      <Filter>UTB</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
