@@ -29,7 +29,7 @@
     <ClCompile Include="MediaFramework.cpp">
       <Filter>소스 파일</Filter>
     </ClCompile>
-    <ClCompile Include="thread_pool.cpp">
+    <ClCompile Include="thread_pool.hpp">
       <Filter>소스 파일\util</Filter>
     </ClCompile>
   </ItemGroup>
