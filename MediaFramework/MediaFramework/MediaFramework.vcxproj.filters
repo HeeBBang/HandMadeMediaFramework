@@ -21,6 +21,9 @@
     <ClInclude Include="pch.h">
       <Filter>헤더 파일</Filter>
     </ClInclude>
+    <ClInclude Include="EventManager.h">
+      <Filter>소스 파일\util</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
@@ -30,6 +33,9 @@
       <Filter>소스 파일</Filter>
     </ClCompile>
     <ClCompile Include="thread_pool.hpp">
+      <Filter>소스 파일\util</Filter>
+    </ClCompile>
+    <ClCompile Include="EventManager.cpp">
       <Filter>소스 파일\util</Filter>
     </ClCompile>
   </ItemGroup>
