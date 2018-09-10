@@ -2,7 +2,6 @@
 #define UTIL_THREAD_POOL_
 
 #include <cstdio>
-#include <boost/asio.hpp>
 
 class ThreadPool {
 public :

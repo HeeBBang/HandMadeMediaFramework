@@ -32,5 +32,8 @@
     <ClCompile Include="thread_pool.hpp">
       <Filter>소스 파일\util</Filter>
     </ClCompile>
+    <ClCompile Include="EventManager.cpp">
+      <Filter>소스 파일\util</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
