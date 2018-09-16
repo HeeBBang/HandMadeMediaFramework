@@ -1,3 +1,8 @@
+#include <boost/asio/io_service.hpp>
+#include <boost/thread/thread_pool.hpp>
+#include <boost/thread/thread.hpp>
+
+
 class EventManager
 {
 public:
@@ -26,6 +31,25 @@ public:
 
 
 private:
+	boost::asio::io_service event_loop;
+	//boost::asio::io_service::work work(event_loop);
+
+	boost::basic_thread_pool thread_pool;
+	boost::thread main_loop;
+	bool operation;
+
+
+	/// <summary>
+	/// Event Manager의 Event Loop 시작
+	/// </summary>
+	void start(void);
+
+	/// <summary>
+	/// Event Manager의 Event Loop 종료
+	/// </summary>
+	void stop(void);
+
+
 	
 
 
