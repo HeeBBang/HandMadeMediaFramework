@@ -1,6 +1,7 @@
 #include <boost/asio/io_service.hpp>
 #include <boost/thread/thread_pool.hpp>
 #include <boost/thread/thread.hpp>
+#include <boost/smart_ptr.hpp>
 
 class EventManager
 {
@@ -31,10 +32,12 @@ public:
 
 private:
 	boost::asio::io_service event_loop;
-	//boost::asio::io_service::work work(event_loop);
-
+	
 	boost::basic_thread_pool thread_pool;
-	boost::thread main_loop;
+
+	boost::scoped_ptr<boost::thread> main_loop;
+	
+
 	bool operation;
 
 
@@ -53,11 +56,3 @@ private:
 
 
 };
-
-EventManager::EventManager()
-{
-}
-
-EventManager::~EventManager()
-{
-}
