@@ -2,7 +2,6 @@
 #include <boost/thread/thread_pool.hpp>
 #include <boost/thread/thread.hpp>
 
-
 class EventManager
 {
 public:
